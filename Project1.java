@@ -162,6 +162,8 @@ public class Project1 {
                 if(board[i][j] != 0){
                     isQuadrantEmpty = false;
                      //counter++;
+                    //edit
+                    
                 }
 
             }
