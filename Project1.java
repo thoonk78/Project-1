@@ -161,7 +161,7 @@ public class Project1 {
             for(int j = left; j < right; j++){
                 if(board[i][j] != 0){
                     isQuadrantEmpty = false;
-                    //counter++;
+                     //counter++;
                 }
 
             }
