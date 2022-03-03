@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Project1
+comment0.text=\r\n\ See\ the\ project\ description\ for\ details\ about\ what\ is\ expected\r\n\ for\ the\ methods\ outlind\ below.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=exp
+comment2.target=int[][]\ getRandomBoard(int)
+comment3.params=board
+comment3.target=void\ printBoard(int[][])
+comment4.params=board
+comment4.target=void\ tileCheckerboardRec(int[][])
+comment5.params=board\ left\ right\ top\ bottom
+comment5.target=void\ tileCheckerboardRec(int[][],\ int,\ int,\ int,\ int)
+comment6.params=board\ left\ right\ top\ bottom
+comment6.target=boolean\ isQuadrantEmpty(int[][],\ int,\ int,\ int,\ int)
+comment6.text=\r\n\ \ \ \ public\ static\ boolean\ isQuadrantEmpty(int[][]\ board,\ int\ left,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ right,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ top,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ bottom)\ {\r\n\ \ \ \ \ \ \ \ int\ colSearched\ \=\ left;\r\n\ \ \ \ \ \ \ \ int\ rowSearched\ \=\ top;\r\n\ \ \ \ \ \ \ \ if(board[rowSearched][colSearched]\ >\ 0)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("\\n");\r\n\ \ \ \ \ \ \ \ \ \ \ \ printBoard(board);\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ false;\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\ if(colSearched\ +\ 1\ <\ right)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ isQuadrantEmpty(board,\ colSearched\ +\ 1,\ right,\ top,\ bottom);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\ if(rowSearched\ +\ 1\ <\ bottom)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ isQuadrantEmpty(board,\ left,\ right,\ rowSearched\ +\ 1,\ bottom);\ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("\\n");\r\n\ \ \ \ \ \ \ \ \ \ \ \ printBoard(board);\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ true;\ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\r\n
+numComments=7
