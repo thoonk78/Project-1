@@ -1,17 +1,24 @@
 #BlueJ class context
 comment0.target=Project1
-comment0.text=\r\n\ See\ the\ project\ description\ for\ details\ about\ what\ is\ expected\r\n\ for\ the\ methods\ outlind\ below.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ See\ the\ project\ description\ for\ details\ about\ what\ is\ expected\r\n\ for\ the\ methods\ outlind\ below.\r\n\r\n\ @author\ Samuel\ Ayoade\ &\ Keith\ Thoong\r\n\ @version\ Thursday\ March\ 4th,\ 2022\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=exp
 comment2.target=int[][]\ getRandomBoard(int)
+comment2.text=\r\n\ Generates\ a\ randomboard\ sized\ exp\ by\ exp.\r\n\r\n\ @param\ exp\ Takes\ in\ user's\ exponent\r\n\ @return\ returns\ user\ 2d\ generated\ board\r\n
 comment3.params=board
 comment3.target=void\ printBoard(int[][])
-comment4.params=board
-comment4.target=void\ tileCheckerboardRec(int[][])
-comment5.params=board\ left\ right\ top\ bottom
-comment5.target=void\ tileCheckerboardRec(int[][],\ int,\ int,\ int,\ int)
+comment3.text=\r\n\ Prints\ Random\ generated\ boar\r\n\r\n\ @param\ board\ the\ random\ generated\ board\r\n
+comment4.params=boardLength
+comment4.target=void\ printBorders(int[][])
+comment4.text=\r\n\ Prints\ borders\ around\ the\ numbers\r\n\r\n\ @param\ boardLength\ the\ length\ of\ random\ genreted\ board\r\n
+comment5.params=board
+comment5.target=void\ tileCheckerboardRec(int[][])
+comment5.text=\r\n\ calls\ on\ helper\ method\r\n\r\n\ @param\ randomly\ generated\ board\ \r\n
 comment6.params=board\ left\ right\ top\ bottom
-comment6.target=boolean\ isQuadrantEmpty(int[][],\ int,\ int,\ int,\ int)
-comment6.text=\r\n\ \ \ \ public\ static\ boolean\ isQuadrantEmpty(int[][]\ board,\ int\ left,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ right,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ top,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ bottom)\ {\r\n\ \ \ \ \ \ \ \ int\ colSearched\ \=\ left;\r\n\ \ \ \ \ \ \ \ int\ rowSearched\ \=\ top;\r\n\ \ \ \ \ \ \ \ if(board[rowSearched][colSearched]\ >\ 0)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("\\n");\r\n\ \ \ \ \ \ \ \ \ \ \ \ printBoard(board);\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ false;\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\ if(colSearched\ +\ 1\ <\ right)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ isQuadrantEmpty(board,\ colSearched\ +\ 1,\ right,\ top,\ bottom);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\ if(rowSearched\ +\ 1\ <\ bottom)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ isQuadrantEmpty(board,\ left,\ right,\ rowSearched\ +\ 1,\ bottom);\ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("\\n");\r\n\ \ \ \ \ \ \ \ \ \ \ \ printBoard(board);\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ true;\ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\r\n
-numComments=7
+comment6.target=void\ tileCheckerboardRec(int[][],\ int,\ int,\ int,\ int)
+comment6.text=\r\n\ Helper\ method\ for\ tileCheckerboardRec\r\n\r\n\ @param\ board\ Randomly\ generated\ board\r\n\ @param\ left\ Start\ point\ for\ Column\r\n\ @param\ right\ End\ point\ for\ Column\r\n\ @param\ top\ Start\ point\ for\ Row\r\n\ @param\ bottom\ End\ point\ for\ Row\r\n
+comment7.params=board\ left\ right\ top\ bottom
+comment7.target=boolean\ isQuadrantEmpty(int[][],\ int,\ int,\ int,\ int)
+comment7.text=\r\n\ Checks\ if\ quadrant\ is\ empty\r\n\r\n\ @param\ board\ Randomly\ generated\ board\r\n\ @param\ left\ Start\ point\ for\ Column\r\n\ @param\ right\ End\ point\ for\ Column\r\n\ @param\ top\ Start\ point\ for\ Row\r\n\ @param\ bottom\ End\ point\ for\ Row\r\n\ @return\ Returns\ true\ or\ false\ depending\ on\ whether\ the\ the\ quadrant\ is\ empty\ or\ not\r\n
+numComments=8
